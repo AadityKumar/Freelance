@@ -25,11 +25,11 @@ function App() {
   const Layout = () => {
     return (
       <div className="app">
-        <QueryClientProvider client={queryClient}>
+        {/* <QueryClientProvider client={queryClient}> */}
           <Navbar />
           <Outlet />
           <Footer />
-        </QueryClientProvider>
+        {/* </QueryClientProvider> */}
       </div>
     );
   };

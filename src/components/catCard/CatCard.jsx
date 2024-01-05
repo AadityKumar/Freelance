@@ -4,6 +4,7 @@ import "./CatCard.scss";
 
 function CatCard({ card }) {
     return (
+        <>
         <Link to="/gigs?cat=design">
             <div className="catCard">
                 <img src={card.img} alt="" />
@@ -11,6 +12,7 @@ function CatCard({ card }) {
                 <span className="title">{card.title}</span>
             </div>
         </Link>
+        </>
     );
 }
 export default CatCard;

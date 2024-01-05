@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import newRequest from "../../utils/newRequest";
 import "./Navbar.scss";
@@ -20,9 +20,9 @@ function Navbar() {
         };
     }, []);
 
-    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    const currentUser = null       // if dynamic then data comes from local storage
 
-    const navigate = useNavigate();
+    const navigate = useNavigate();                    //  for dynamic
 
     const handleLogout = async () => {
         try {
@@ -49,7 +49,7 @@ function Navbar() {
                     <span>Explore</span>
                     <span>English</span>
                     {!currentUser?.isSeller && <span>Become a Seller</span>}
-                    {currentUser ? (
+                    {currentUser ? (                                                 // for sign and join button
                         <div className="user" onClick={() => setOpen(!open)}>
                             <img src={currentUser.img || "/img/noavatar.jpg"} alt="" />
                             <span>{currentUser?.username}</span>

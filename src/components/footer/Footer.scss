@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     justify-content: center;
+    // text-align: center;
     color: #666;
     margin: 50px 0px;
 
@@ -44,14 +45,14 @@
             justify-content: space-between;
 
             .left {
-                width: max-content;
+                width: max-content;   //
                 display: flex;
                 align-items: center;
                 gap: 20px;
 
                 span {
                     font-size: 13px;
-                    white-space: nowrap;
+                    white-space: nowrap;   //
                 }
             }
 

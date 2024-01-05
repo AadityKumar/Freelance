@@ -1,14 +1,20 @@
 .featured {
-    height: 600px;
+    height: 100%;
     display: flex;
     justify-content: center;
     background-color: #013914;
     color: white;
+    // width: 1000px;
+    // width: auto;
+    // width: max-content;
+    // width: 100%;
+    
 
     .container {
         width: 1400px;
         display: flex;
         align-items: center;
+        // flex-direction: row;
 
         .left {
             display: flex;
@@ -30,7 +36,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                overflow: hidden;
+                overflow: hidden;    //
 
                 .searchInput {
                     display: flex;
@@ -59,7 +65,7 @@
                     border: none;
                     background-color: #1dbf73;
                     color: white;
-                    align-self: flex-end;
+                    align-self: flex-end;   //
                     cursor: pointer;
                 }
             }
@@ -70,7 +76,7 @@
                 gap: 10px;
 
                 span {
-                    width: max-content;
+                    width: max-content;    //
                 }
 
                 button {
